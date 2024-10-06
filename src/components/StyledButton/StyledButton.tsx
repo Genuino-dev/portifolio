@@ -1,12 +1,12 @@
-import styled from "@emotion/styled";
-import { ReactNode } from "react";
+import { styled } from "@mui/material"
+import { ReactNode } from "react"
 
 interface StyledButtonProps {
     children: ReactNode
     onClick: () => void
 }
 
-const StyledButton: React.FC<StyledButtonProps> = ({children, onClick})=>{
+const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
 
     const StyledButton = styled("button")(({ theme }) => ({
         backgroundColor: "transparent",
@@ -24,14 +24,13 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick})=>{
         }
     }))
 
-
     return (
         <>
-        <StyledButton onClick={onClick}>
-            {children}
-        </StyledButton>
+            <StyledButton onClick={onClick}>
+                {children}
+            </StyledButton>
         </>
     )
 }
 
-export default StyledButton;
+export default StyledButton

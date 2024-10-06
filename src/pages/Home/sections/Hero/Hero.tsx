@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
-import avatar from "../../../../assets/images/WhatsApp Image 2024-10-04 at 21.56.35.jpeg";
+import avatar from "../../../../assets/images/1724587525592.jpg"
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
@@ -83,7 +83,7 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={()=> console.log("Contact me")}>
+                  <StyledButton onClick={()=> console.log("Contact")}>
                     <ContactMailIcon />
                     <Typography>Contact me</Typography>
                   </StyledButton>
