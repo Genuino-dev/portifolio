@@ -13,6 +13,7 @@ const NavBar = () => {
     '&:hover': {
       color: theme.palette.secondary.main, // Cor do texto ao passar o mouse
     },
+    fontSize: "25px"
   }));
 
   return (
@@ -21,7 +22,7 @@ const NavBar = () => {
         <StyledToolbar>
           <StyledMenuItem>About</StyledMenuItem>
           <StyledMenuItem>Skills</StyledMenuItem>
-          <StyledMenuItem>Project</StyledMenuItem>
+          <StyledMenuItem>Projects</StyledMenuItem>
         </StyledToolbar>
       </AppBar>
     </>

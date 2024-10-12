@@ -1,9 +1,10 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
-import avatar from "../../../../assets/images/1724587525592.jpg"
+import avatar from "../../../../assets/images/1724587525592.jpg";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/StyledButton/AnimatedBackground";
+import { saveAs } from "file-saver";
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
@@ -20,6 +21,11 @@ const Hero = () => {
       paddingTop: "0",
     },
   }));
+
+  const downloadCurriculum = () => {
+    const fileUrl = "/Portifolio/portifolioFront/src/assets/Profile (3).pdf";
+    saveAs(fileUrl, "Curriculum.pdf");
+  };
 
   const StyledImg = styled("img")(({ theme }) => ({
     width: "75%",
@@ -71,7 +77,7 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={()=> console.log("download")}>
+                  <StyledButton onClick={downloadCurriculum}>
                     <FileDownloadIcon />
                     <Typography> Download CV</Typography>
                   </StyledButton>
@@ -83,10 +89,17 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={()=> console.log("Contact")}>
-                    <ContactMailIcon />
-                    <Typography>Contact me</Typography>
-                  </StyledButton>
+                  <a
+                    href="https://www.linkedin.com/in/isabellagenuino/"
+                    target="_blanck"
+                    rel="nooperner noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <StyledButton>
+                      <ContactMailIcon />
+                      <Typography>Contact me</Typography>
+                    </StyledButton>
+                  </a>
                 </Grid>
               </Grid>
             </Grid>

@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 
 interface StyledButtonProps {
     children: ReactNode
-    onClick: () => void
+    onClick?: () => void
 }
 
 const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
