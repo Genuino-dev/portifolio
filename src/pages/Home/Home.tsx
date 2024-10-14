@@ -9,7 +9,15 @@ const Home = () => {
     <>
       <NavBar />
       <Hero />
-      <About/>
+      <div id="about">
+        <About />
+        </div>
+        <div id="skills">
+        {/* {skills} */}
+      </div>
+      <div id="projects">
+       {/* projects */}
+      </div>
     </>
   );
 };

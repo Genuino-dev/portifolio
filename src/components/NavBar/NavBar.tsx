@@ -16,13 +16,20 @@ const NavBar = () => {
     fontSize: "25px"
   }));
 
+  const handleScroll =  (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if(section){
+      section.scrollIntoView({behavior: 'smooth'});
+    }
+  };
+
   return (
     <>
       <AppBar position="absolute">
         <StyledToolbar>
-          <StyledMenuItem>About</StyledMenuItem>
-          <StyledMenuItem>Skills</StyledMenuItem>
-          <StyledMenuItem>Projects</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll('about')}>About</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll('skills')}>Skills</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll('projects')}>Projects</StyledMenuItem>
         </StyledToolbar>
       </AppBar>
     </>
