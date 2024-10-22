@@ -82,43 +82,43 @@ const AboutAccordion = () => {
             <Stack direction="row" spacing={2}>
               <Box
                 component="img"
-                src="/src/assets/images/typescript.png"
+                src="src/assets/images/typescript.png"
                 alt="Typescript logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/images.png"
+                src="/assets/images/images.png"
                 alt="React logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/mongodb.png"
+                src="/assets/images/mongodb.png"
                 alt="MongoDb logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/docker.jpg"
+                src="/assets/images/docker.jpg"
                 alt="Docker logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/azuredevops.png"
+                src="/assets/images/azuredevops.png"
                 alt="AzureDevops logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/github-6980894_1280.png"
+                src="/assets/images/github-6980894_1280.png"
                 alt="GitHub logo photo"
                 sx={{ width: 100, height: 100 }}
               />
               <Box
                 component="img"
-                src="/src/assets/images/nextjs.png"
+                src="/assets/images/nextjs.png"
                 alt="NextJs logo photo"
                 sx={{ width: 100, height: 100 }}
               />
