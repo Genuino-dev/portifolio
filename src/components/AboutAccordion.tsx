@@ -7,7 +7,7 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import styled from 'styled-components'; // ou '@emotion/styled'
+import styled from '@emotion/styled'; // ou '@emotion/styled'
 
 const StyledImg = styled.img`
   width: 100px;
