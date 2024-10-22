@@ -1,35 +1,41 @@
 import { Box, Grid, styled, Typography } from "@mui/material";
 import StarsIcon from "@mui/icons-material/Stars";
-import SchoolIcon from '@mui/icons-material/School';
+import SchoolIcon from "@mui/icons-material/School";
 
 const About = () => {
   const StyledAboutMe = styled("div")(({ theme }) => ({
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: "#f0f0f0", // Alterado para cinza
     padding: theme.spacing(4),
-    textAlign: "center", // Corrigido de 'taxtAlign' para 'textAlign'
+    textAlign: "center",
   }));
 
   const InfoBox = styled(Box)(({ theme }) => ({
-    backgroundColor: "white",
+    backgroundColor: "transparent", // Alterado para transparente
     padding: theme.spacing(2),
     margin: theme.spacing(1),
     borderRadius: theme.shape.borderRadius,
-    boxShadow: theme.shadows, // Adicionei um índice para a sombra
+    gap: "30px",
+    boxShadow:
+      "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px", // Removida a sombra
   }));
 
   return (
     <StyledAboutMe>
-      <Typography variant="h3" color="primary">
+      <Typography
+        variant="h5"
+        color="primary"
+        style={{ marginBottom: "16px", marginTop: "16px" }}
+      >
         About Me
       </Typography>
-      <Typography variant="h4" color="primary" paragraph>
-        Developer Frontend 
+      <Typography variant="h5" color="primary" paragraph>
+        Developer Frontend
       </Typography>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={5} justifyContent="center">
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <StarsIcon></StarsIcon>
-            <Typography variant="h5">Experience </Typography>
+            <StarsIcon />
+            <Typography variant="h5">Experience</Typography>
             <Typography variant="h6" color="textSecondary">
               +1 Years
             </Typography>
@@ -40,16 +46,23 @@ const About = () => {
         </Grid>
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <SchoolIcon></SchoolIcon>
+            <SchoolIcon />
             <Typography variant="h5" color="primary">
               Education
             </Typography>
             <Typography variant="h6" color="textSecondary">
               Technological Degree
             </Typography>
-            <Typography variant="h6" color="textSecondary">Technology degree in Systems Analysis and Development</Typography>
+            <Typography variant="h6" color="textSecondary">
+              Technology degree in Systems Analysis and Development
+            </Typography>
           </InfoBox>
         </Grid>
+      </Grid>
+      <Grid>
+        <InfoBox>
+          <Typography variant="h5">Skills</Typography>
+        </InfoBox>
       </Grid>
     </StyledAboutMe>
   );
