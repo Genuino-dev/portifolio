@@ -1,5 +1,4 @@
 import {
-  Box,
   Grid,
   Stack,
   Typography,
@@ -8,6 +7,13 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styled from 'styled-components'; // ou '@emotion/styled'
+
+const StyledImg = styled.img`
+  width: 100px;
+  height: 100px;
+`;
+
 const AboutAccordion = () => {
   return (
     <>
@@ -85,54 +91,13 @@ const AboutAccordion = () => {
         <AccordionDetails>
           <Grid container justifyContent="center">
             <Stack direction="row" spacing={2}>
-              <Box>
-                <img
-                src="src/assets/images/typescript.png"
-                alt="Typescript logo photo"
-                style={{ width: 100, height: 100 }}
-              />
-              </Box>
-              <Box
-                component="img"
-                src="src/assets/images/images.png"
-                alt="React logo photo"
-                sx={{ width: 100, height: 100 }}
-              />
-              <Box>
-                <img
-                src="src/assets/images/mongodb.png"
-                alt="MongoDb logo photo"
-                style={{ width: 100, height: 100 }}
-              />
-              </Box>
-              <Box>
-                <img
-                src="src/assets/images/docker.jpg"
-                alt="Docker logo photo"
-                style={{ width: 100, height: 100 }}
-              />
-              </Box>
-              <Box>
-                <img
-                src="src/assets/images/azuredevops.png"
-                alt="AzureDevops logo photo"
-                style={{ width: 100, height: 100 }}
-              />
-              </Box>
-              <Box>
-                <img
-                src="src/assets/images/github-6980894_1280.png"
-                alt="GitHub logo photo"
-                style={{ width: 100, height: 100 }}
-              />
-              </Box>
-              <Box>
-                <img
-                  src="src/assets/images/nextjs.png"
-                  alt="NextJs logo photo"
-                  style={{ width: 100, height: 100 }}
-                />
-              </Box>
+              <StyledImg src="/images/typescript.png" alt="Typescript logo photo" />
+              <StyledImg src="images/images.png" alt="React logo photo" />
+              <StyledImg src="/images/mongodb.png" alt="MongoDb logo photo" />
+              <StyledImg src="/images/docker.jpg" alt="Docker logo photo" />
+              <StyledImg src="/images/azuredevops.png" alt="AzureDevops logo photo" />
+              <StyledImg src="/images/github-6980894_1280.png" alt="GitHub logo photo" />
+              <StyledImg src="src/assets/images/nextjs.png" alt="NextJs logo photo" />
             </Stack>
           </Grid>
         </AccordionDetails>
