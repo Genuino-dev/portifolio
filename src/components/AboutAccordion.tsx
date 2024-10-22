@@ -97,7 +97,7 @@ const AboutAccordion = () => {
               <StyledImg src="/images/docker.jpg" alt="Docker logo photo" />
               <StyledImg src="/images/azuredevops.png" alt="AzureDevops logo photo" />
               <StyledImg src="/images/github-6980894_1280.png" alt="GitHub logo photo" />
-              <StyledImg src="src/assets/images/nextjs.png" alt="NextJs logo photo" />
+              <StyledImg src="/images/nextjs.png" alt="NextJs logo photo" />
             </Stack>
           </Grid>
         </AccordionDetails>
