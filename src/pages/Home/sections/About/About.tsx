@@ -1,6 +1,11 @@
-import { Box, Grid, styled, Typography } from "@mui/material";
+import { Box, Grid, Stack, styled, Typography } from "@mui/material";
 import StarsIcon from "@mui/icons-material/Stars";
 import SchoolIcon from "@mui/icons-material/School";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AboutAccordion from "../../../../components/AboutAccordion";
 
 const About = () => {
   const StyledAboutMe = styled("div")(({ theme }) => ({
@@ -15,26 +20,15 @@ const About = () => {
     margin: theme.spacing(1),
     borderRadius: theme.shape.borderRadius,
     gap: "30px",
-    boxShadow:
-      "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px", // Removida a sombra
+    boxShadow: "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px", // Removida a sombra
   }));
 
   return (
     <StyledAboutMe>
-      <Typography
-        variant="h5"
-        color="primary"
-        style={{ marginBottom: "16px", marginTop: "16px" }}
-      >
-        About Me
-      </Typography>
-      <Typography variant="h5" color="primary" paragraph>
-        Developer Frontend
-      </Typography>
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={6} justifyContent="center">
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <StarsIcon />
+            <StarsIcon fontSize="large" />
             <Typography variant="h5">Experience</Typography>
             <Typography variant="h6" color="textSecondary">
               +1 Years
@@ -46,7 +40,7 @@ const About = () => {
         </Grid>
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <SchoolIcon />
+            <SchoolIcon fontSize="large" />
             <Typography variant="h5" color="primary">
               Education
             </Typography>
@@ -60,9 +54,7 @@ const About = () => {
         </Grid>
       </Grid>
       <Grid>
-        <InfoBox>
-          <Typography variant="h5">Skills</Typography>
-        </InfoBox>
+        <AboutAccordion/>
       </Grid>
     </StyledAboutMe>
   );
