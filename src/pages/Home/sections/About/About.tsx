@@ -1,10 +1,6 @@
-import { Box, Grid, Stack, styled, Typography } from "@mui/material";
+import { Box, Grid, styled, Typography } from "@mui/material";
 import StarsIcon from "@mui/icons-material/Stars";
 import SchoolIcon from "@mui/icons-material/School";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AboutAccordion from "../../../../components/AboutAccordion";
 
 const About = () => {
