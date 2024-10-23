@@ -24,19 +24,19 @@ const About = () => {
       <Grid container spacing={6} justifyContent="center">
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <StarsIcon fontSize="large" />
+            <StarsIcon fontSize="medium" />
             <Typography variant="h5">Experience</Typography>
             <Typography variant="h6" color="textSecondary">
               +1 Years
             </Typography>
-            <Typography variant="h6" color="textSecondary">
+            <Typography variant="h6" color="textSecondary" fontSize="">
               Frontend Development
             </Typography>
           </InfoBox>
         </Grid>
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <SchoolIcon fontSize="large" />
+            <SchoolIcon fontSize="medium" />
             <Typography variant="h5" color="primary">
               Education
             </Typography>

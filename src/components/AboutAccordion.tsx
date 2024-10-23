@@ -10,8 +10,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styled from '@emotion/styled'; // ou '@emotion/styled'
 
 const StyledImg = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 `;
 
 const AboutAccordion = () => {
@@ -39,7 +39,7 @@ const AboutAccordion = () => {
           style={{
             maxWidth: "90%",
             margin: "0 auto",
-            fontSize: "20px",
+            fontSize: "18px",
             backgroundColor: "transparent",
           }}
         >
@@ -48,9 +48,9 @@ const AboutAccordion = () => {
               style={{
                 maxWidth: "1500px",
                 margin: "0 auto",
-                fontSize: "17px",
+                fontSize: "14px",
               }}
-              variant="h6"
+              variant="h5"
               color="Primary"
             >
               Graduanda em Análise e Desenvolvimento de Sistemas, atualmente,
@@ -74,7 +74,7 @@ const AboutAccordion = () => {
         style={{
           maxWidth: "90%",
           margin: "0 auto",
-          fontSize: "40px",
+          fontSize: "30px",
           backgroundColor: "transparent",
         }}
       >
