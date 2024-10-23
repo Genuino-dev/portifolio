@@ -58,7 +58,7 @@ const Hero = () => {
               </Typography>
               <Typography
                 color="primary.contrastText"
-                variant="h2"
+                variant="h3"
                 textAlign="center"
               >
                 I'm Software Developer
@@ -78,7 +78,7 @@ const Hero = () => {
                   justifyContent="center"
                 >
                   <StyledButton onClick={downloadCurriculum}>
-                    <FileDownloadIcon />
+                    <FileDownloadIcon  fontSize="medium"/>
                     <Typography> Download CV</Typography>
                   </StyledButton>
                 </Grid>
@@ -96,7 +96,7 @@ const Hero = () => {
                     style={{ textDecoration: "none" }}
                   >
                     <StyledButton>
-                      <ContactMailIcon />
+                      <ContactMailIcon fontSize="medium" />
                       <Typography>Contact me</Typography>
                     </StyledButton>
                   </a>
