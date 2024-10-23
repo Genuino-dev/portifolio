@@ -59,9 +59,8 @@ const Hero = () => {
               </Typography>
               <Typography
                 color="primary.contrastText"
-                variant="h3"
+                variant="h4"
                 textAlign="center"
-                marginTop="30px"
               >
                 I'm Software Developer
               </Typography>
