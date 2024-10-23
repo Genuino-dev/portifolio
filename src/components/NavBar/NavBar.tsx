@@ -13,7 +13,7 @@ const NavBar = () => {
     '&:hover': {
       color: theme.palette.secondary.main, // Cor do texto ao passar o mouse
     },
-    fontSize: "25px"
+    fontSize: "19px"
   }));
 
   const handleScroll =  (sectionId: string) => {

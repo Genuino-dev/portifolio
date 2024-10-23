@@ -21,7 +21,7 @@ const AboutAccordion = () => {
         style={{
           maxWidth: "90%",
           margin: "0 auto",
-          fontSize: "40px",
+          fontSize: "20px",
           backgroundColor: "transparent",
         }}
       >
@@ -32,7 +32,7 @@ const AboutAccordion = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Grid container justifyContent="center">
-            <Typography variant="h5">Skills</Typography>
+            <Typography variant="h6">Skills</Typography>
           </Grid>
         </AccordionSummary>
         <AccordionDetails
@@ -46,11 +46,11 @@ const AboutAccordion = () => {
           <Stack>
             <Typography
               style={{
-                maxWidth: "1500px",
+                maxWidth: "100%",
                 margin: "0 auto",
                 fontSize: "14px",
               }}
-              variant="h5"
+              variant="h6"
               color="Primary"
             >
               Graduanda em Análise e Desenvolvimento de Sistemas, atualmente,
@@ -85,7 +85,7 @@ const AboutAccordion = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Grid container justifyContent="center">
-            <Typography variant="h5">Stacks and technologies</Typography>
+            <Typography variant="h6">Stacks and technologies</Typography>
           </Grid>
         </AccordionSummary>
         <AccordionDetails>

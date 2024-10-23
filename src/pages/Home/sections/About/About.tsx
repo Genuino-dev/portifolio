@@ -24,26 +24,26 @@ const About = () => {
       <Grid container spacing={6} justifyContent="center">
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <StarsIcon fontSize="medium" />
-            <Typography variant="h5">Experience</Typography>
-            <Typography variant="h6" color="textSecondary">
+            <StarsIcon />
+            <Typography variant="h6">Experience</Typography>
+            <Typography  color="textSecondary">
               +1 Years
             </Typography>
-            <Typography variant="h6" color="textSecondary" fontSize="">
+            <Typography color="textSecondary" fontSize="">
               Frontend Development
             </Typography>
           </InfoBox>
         </Grid>
         <Grid item xs={12} md={5}>
           <InfoBox>
-            <SchoolIcon fontSize="medium" />
-            <Typography variant="h5" color="primary">
+            <SchoolIcon/>
+            <Typography variant="h6" color="primary">
               Education
             </Typography>
-            <Typography variant="h6" color="textSecondary">
+            <Typography color="textSecondary">
               Technological Degree
             </Typography>
-            <Typography variant="h6" color="textSecondary">
+            <Typography color="textSecondary">
               Technology degree in Systems Analysis and Development
             </Typography>
           </InfoBox>

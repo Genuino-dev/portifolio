@@ -50,9 +50,10 @@ const Hero = () => {
             <Grid item xs={12} md={7}>
               <Typography
                 color="primary.contrastText"
-                variant="h1"
+                variant="h2"
                 textAlign="center"
                 pb={2}
+                marginTop="50px"
               >
                 Isabella Genuino
               </Typography>
@@ -60,6 +61,7 @@ const Hero = () => {
                 color="primary.contrastText"
                 variant="h3"
                 textAlign="center"
+                marginTop="30px"
               >
                 I'm Software Developer
               </Typography>
@@ -69,6 +71,7 @@ const Hero = () => {
                 justifyContent="center"
                 spacing={3}
                 pt={3}
+                marginTop="30px"
               >
                 <Grid
                   item
