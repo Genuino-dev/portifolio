@@ -47,7 +47,7 @@ const Hero = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={7} marginTop="50px">
               <Typography
                 color="primary.contrastText"
                 variant="h2"
@@ -70,7 +70,7 @@ const Hero = () => {
                 justifyContent="center"
                 spacing={3}
                 pt={3}
-                marginTop="30px"
+
               >
                 <Grid
                   item

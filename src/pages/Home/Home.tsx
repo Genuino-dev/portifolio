@@ -13,10 +13,6 @@ const Home = () => {
         <About />
         </div>
         <div id="skills">
-        {/* {skills} */}
-      </div>
-      <div id="projects">
-       {/* projects */}
       </div>
     </>
   );

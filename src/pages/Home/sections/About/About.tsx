@@ -1,7 +1,7 @@
 import { Box, Grid, styled, Typography } from "@mui/material";
 import StarsIcon from "@mui/icons-material/Stars";
 import SchoolIcon from "@mui/icons-material/School";
-import AboutAccordion from "../../../../components/AboutAccordion";
+import AboutAccordion from "../../../../components/AboutAccordions.tsx/AboutTechnologies";
 
 const About = () => {
   const StyledAboutMe = styled("div")(({ theme }) => ({
@@ -30,7 +30,7 @@ const About = () => {
               +1 Years
             </Typography>
             <Typography color="textSecondary" fontSize="">
-              Frontend Development
+              FullStack Development
             </Typography>
           </InfoBox>
         </Grid>
