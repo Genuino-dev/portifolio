@@ -1,7 +1,7 @@
 import { Box, Grid, styled, Typography } from "@mui/material";
 import StarsIcon from "@mui/icons-material/Stars";
 import SchoolIcon from "@mui/icons-material/School";
-import AboutAccordion from "../../../../components/AboutAccordions.tsx/AboutTechnologies";
+import AboutAccordion from "../../../../components/AboutAccordions/AboutAccordion";
 
 const About = () => {
   const StyledAboutMe = styled("div")(({ theme }) => ({

@@ -1,6 +1,11 @@
-import { Accordion, AccordionSummary, Grid, Typography, AccordionDetails, Stack } from "@mui/material";
+import { Accordion, AccordionSummary, Grid, Typography, AccordionDetails, Stack, Link } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styled from '@emotion/styled'; // ou '@emotion/styled'
 
+const StyledImg = styled.img`
+  width: 70px;
+  height: 70px;
+`;
 const AboutProjects = () => {
   return (
     <>
@@ -25,6 +30,9 @@ const AboutProjects = () => {
         <AccordionDetails>
           <Grid container justifyContent="center">
             <Stack direction="row" spacing={1}>
+              <Link href="https://github.com/Genuino-dev?tab=repositories" target="_blank"rel="noopener noreferrer">
+                <StyledImg src="/images/github-6980894_1280.png" alt="GitHub logo photo" />
+                </Link>
             </Stack>
           </Grid>
         </AccordionDetails>

@@ -9,6 +9,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styled from '@emotion/styled'; // ou '@emotion/styled'
 import AboutSkills from "./AboutSkills";
+import AboutProjects from "./AboutProjects";
 
 const StyledImg = styled.img`
   width: 70px;
@@ -53,6 +54,7 @@ const AboutAccordion = () => {
           </Grid>
         </AccordionDetails>
       </Accordion>
+      <AboutProjects/>
     </>
   );
 };
