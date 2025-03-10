@@ -14,6 +14,7 @@ import AboutProjects from "./AboutProjects";
 const StyledImg = styled.img`
   width: 70px;
   height: 70px;
+  object-fit: cover;
 `;
 
 const AboutAccordion = () => {
