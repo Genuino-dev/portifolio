@@ -1,6 +1,12 @@
-
 import { useEffect, useState } from "react";
-import { Box, Grid, Typography, styled, Button, TextField } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  styled,
+  Button,
+  TextField,
+} from "@mui/material";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import SendIcon from "@mui/icons-material/Send";
 
@@ -26,21 +32,29 @@ const QuotesModule = () => {
   }, []);
 
   const handlePost = () => {
-    fetch("https://httpbin.org/status/429", {
+    // Usei um caminho relativo no meu próprio domínio.
+    // Quando o site estiver via Azion, isso se torna https://seuportifolio.com.br/api/send-message
+    fetch("/api/send-message", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ message: inputText })
+      body: JSON.stringify({ message: inputText }),
     })
       .then((res) => {
         if (res.status === 429) {
           setPostStatus("Limite de requisições excedido (HTTP 429)");
         } else {
-          setPostStatus("Requisição POST enviada com sucesso");
+          // Se não for 429 (passou pelo firewall), a Vercel retornará 404 Not Found, o que é esperado por não existir.
+          setPostStatus(
+            `Requisição POST recebida pela origem (Status: ${res.status})`
+          );
         }
       })
-      .catch(() => setPostStatus("Erro ao enviar requisição POST"));
+      .catch((error) => {
+        setPostStatus("Erro ao enviar requisição POST (problema de rede)");
+        console.error("Fetch error:", error);
+      });
   };
 
   return (
