@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import About from "./sections/About/About";
 import Hero from "./sections/Hero/Hero";
+import QuotesModule from "../../components/QuotesModule/QuotesModule";
 
 
 
@@ -9,6 +10,7 @@ const Home = () => {
     <>
       <NavBar />
       <Hero />
+      <QuotesModule />
       <div id="about">
         <About />
         </div>

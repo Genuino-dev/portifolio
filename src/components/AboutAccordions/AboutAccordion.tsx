@@ -7,7 +7,7 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import styled from '@emotion/styled'; // ou '@emotion/styled'
+import styled from "@emotion/styled"; // ou '@emotion/styled'
 import AboutSkills from "./AboutSkills";
 import AboutProjects from "./AboutProjects";
 
@@ -20,7 +20,7 @@ const StyledImg = styled.img`
 const AboutAccordion = () => {
   return (
     <>
-    <AboutSkills/>
+      <AboutSkills />
       <Accordion
         style={{
           maxWidth: "90%",
@@ -42,20 +42,47 @@ const AboutAccordion = () => {
         <AccordionDetails>
           <Grid container justifyContent="center">
             <Stack direction="row" spacing={1}>
-              <StyledImg src="/images/typescript.png" alt="Typescript logo photo" />
-              <StyledImg src="images/images.png" alt="React logo photo" />
-              <StyledImg src="/images/mongodb.png" alt="MongoDb logo photo" />
-              <StyledImg src="/images/docker.jpg" alt="Docker logo photo" />
-              <StyledImg src="/images/azuredevops.png" alt="AzureDevops logo photo" />
-              <StyledImg src="/images/github-6980894_1280.png" alt="GitHub logo photo" />
-              <StyledImg src="/images/nextjs.png" alt="NextJs logo photo" />
-              <StyledImg src="/images/angular.webp" alt ="AngularJs logo photo"/>
-              <StyledImg src="/images/nodejs.png" alt="NodeJs logo photo" />
+              <StyledImg
+                src="/images/typescript.png?id=123"
+                alt="Typescript logo photo"
+              />
+              <StyledImg
+                src="images/images.png?lang=pt"
+                alt="React logo photo"
+              />
+              <StyledImg
+                src="/images/mongodb.png?v=1"
+                alt="MongoDb logo photo"
+              />
+              <StyledImg
+                src="/images/docker.jpg?tech=js"
+                alt="Docker logo photo"
+              />
+              <StyledImg
+                src="/images/azuredevops.png?stack=frontend"
+                alt="AzureDevops logo photo"
+              />
+              <StyledImg
+                src="/images/github-6980894_1280.png?img=logo"
+                alt="GitHub logo photo"
+              />
+              <StyledImg
+                src="/images/nextjs.png?type=png"
+                alt="NextJs logo photo"
+              />
+              <StyledImg
+                src="/images/angular.webp?ref=azion"
+                alt="AngularJs logo photo"
+              />
+              <StyledImg
+                src="/images/nodejs.png?cache=test"
+                alt="NodeJs logo photo"
+              />
             </Stack>
           </Grid>
         </AccordionDetails>
       </Accordion>
-      <AboutProjects/>
+      <AboutProjects />
     </>
   );
 };
