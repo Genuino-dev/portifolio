@@ -55,7 +55,7 @@ const AboutAccordion = () => {
                 alt="MongoDb logo photo"
               />
               <StyledImg
-                src="/images/docker.jpg?tech=js"
+                src="/images/docker.jpeg?tech=js"
                 alt="Docker logo photo"
               />
               <StyledImg
